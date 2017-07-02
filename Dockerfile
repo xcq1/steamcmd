@@ -11,7 +11,8 @@ RUN apt update && \
 
 WORKDIR /steam
 ADD install.sh /steam
-RUN curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" | tar zxvf -
+RUN curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" | tar zxvf - && \
+	chmod u+x install.sh
 
 
 CMD ["/steam/install.sh"]
