@@ -1,3 +1,3 @@
-# docker
+# steamcmd
 
-Repository of all the server operation Dockerfiles I have developed.
+Dockerfile for barebones steamcmd for Ubuntu
