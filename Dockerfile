@@ -2,7 +2,7 @@ FROM ubuntu:latest
 # sadly we cannot use Alpine here because of the 32bit libstdc++ dependency
 LABEL maintainer="mail@tobiaskuhn.de"
 
-ENV STEAMID
+ENV STEAMID ""
 ENV INSTALLDIR "/game/"
 
 RUN apt update && \
