@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 # sadly we cannot use Alpine here because of the 32bit libstdc++ dependency
-MAINTAINER Tobias Kuhn <mail@tobiaskuhn.de>
+LABEL maintainer="mail@tobiaskuhn.de"
 
 RUN apt update && \
 	apt install -y lib32gcc1 curl && \
