@@ -11,7 +11,8 @@ RUN apt update && \
 
 RUN useradd -m steam && \
 	cd /home/steam && \
-	mkdir Steam
+	mkdir Steam && \
+	chown steam:steam Steam
 
 USER steam
 WORKDIR /home/steam/Steam
