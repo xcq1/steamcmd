@@ -11,14 +11,14 @@ RUN apt update && \
 
 RUN useradd -m steam && \
 	cd /home/steam && \
-	mkdir Steam && \
-	chown steam:steam Steam
+	mkdir Steam
 
-USER steam
 WORKDIR /home/steam/Steam
 ADD install.sh /home/steam/Steam
+RUN chown -R steam:steam /home/steam/Steam
+
+USER steam
 RUN curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" | tar zxvf - && \
 	chmod u+x install.sh
-
 
 CMD ["/home/steam/Steam/install.sh"]
