@@ -16,9 +16,9 @@ RUN useradd -m steam && \
 
 USER steam
 WORKDIR /home/steam/Steam
-ADD install.sh /steam
+ADD install.sh /home/steam/Steam
 RUN curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" | tar zxvf - && \
 	chmod u+x install.sh
 
 
-CMD ["/steam/install.sh"]
+CMD ["/home/steam/Steam/install.sh"]
