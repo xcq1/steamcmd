@@ -8,7 +8,7 @@ Barebone steamcmd in Ubuntu to create new images from
 The following environment variables can be defined:
 
 - `STEAMID=xyz` (**mandatory**): The steamid to install on startup. The id can be obtained from the search on https://steamdb.info.
-- `INSTALLDIR=/xyz/` (default `/game/`): The install directory of the steam app.
+- `INSTALLDIR=/xyz/` (default `/home/steam/game/`): The install directory of the steam app.
 
 ### Starting
 

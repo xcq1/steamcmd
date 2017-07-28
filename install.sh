@@ -6,4 +6,4 @@ if [ -z "$STEAMID" ]; then
 fi
 
 mkdir -p $INSTALLDIR
-/steam/steamcmd.sh +login anonymous +force_install_dir $INSTALLDIR +app_update $STEAMID +exit
+/home/steam/Steam/steamcmd.sh +login anonymous +force_install_dir $INSTALLDIR +app_update $STEAMID +exit
