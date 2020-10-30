@@ -6,7 +6,7 @@ ENV STEAMID ""
 ENV INSTALLDIR "/home/steam/game/"
 
 RUN apt update && \
-	apt install -y lib32gcc1 libsdl2-2.0-0:i386 curl && \
+	apt install -y lib32gcc1 libsdl2-2.0-0 curl && \
 	apt clean
 
 RUN useradd -m steam && \
